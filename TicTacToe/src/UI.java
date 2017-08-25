@@ -39,7 +39,9 @@ public class UI extends Application {
 					int y = (int) (event.getSceneY()-100)/100;
 					sLog.log(""+x+" "+y);
 					imageContainer[x][y].setVisible(true);
-				
+					gameAlgorythms.gameField[x][y].setState(1);
+					gameAlgorythms.changeNearMass();
+					sLog.logCellDMass("cm", gameAlgorythms.gameField);
 				}
 				
 				
@@ -67,6 +69,8 @@ public class UI extends Application {
 				}
 				
 				windowAnchorPane_1.getChildren().add(imageContainer[j][i]);
+			
+			
 			}	
 			
 			

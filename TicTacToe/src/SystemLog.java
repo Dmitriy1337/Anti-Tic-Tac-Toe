@@ -11,6 +11,15 @@ Constants c = new Constants();
 		logn(message);
 		System.out.println(mass.toString());
 	}
+	
+	public void checkNearMN(Cell ce){
+		for(int i = 0;i<8;i++){
+		log("/"+ce.getNearMass()[i]);
+		
+		}
+		logn("");
+	}
+	
 	public void logTwoDMass(String message,int mass[]){
 		logn(message);
 		System.out.println(mass.toString());

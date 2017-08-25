@@ -30,8 +30,8 @@ SystemLog sLog = new SystemLog();
 	}
 	
 	
-	public int getState(int s){
-		sLog.log(" NEAR_MASSIVE"+this.State);
+	public int getState(){
+		///sLog.log(" NEAR_MASSIVE"+this.State);
 		return this.State;
 		
 		}
@@ -57,7 +57,7 @@ SystemLog sLog = new SystemLog();
 			
 		public void setNearMass(int[]mass){
 			this.nearMass=mass;
-			sLog.logOneDMass("  NEAR_MASSIVE",this.nearMass);
+			//sLog.logOneDMass("  NEAR_MASSIVE",this.nearMass);
 				
 			
 		}
